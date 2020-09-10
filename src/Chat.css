@@ -4,6 +4,12 @@
   flex: 0.8;
 }
 
+.chatHeader {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
 .chatHeader_info > span {
   font-size: 16px;
   font-weight: 600;
@@ -13,4 +19,22 @@
 .chatHeader_info > p {
   font-size: 14px;
   color: #7b7b7b;
+}
+
+.chatHeader_right {
+  display: flex;
+  align-content: space-around;
+}
+
+.chatHeader_info {
+  flex: 1;
+  padding-left: 20px;
+}
+.chatHeader_info > span {
+  margin-bottom: 3px;
+}
+
+.chatBody {
+  background-color: white;
+  height: 100vh;
 }
