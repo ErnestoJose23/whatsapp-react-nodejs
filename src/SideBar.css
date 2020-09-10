@@ -3,3 +3,22 @@
   flex-direction: column;
   flex: 0.35;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-right: 1px solid lightgray;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+
+.headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 20px !important;
+}
