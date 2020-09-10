@@ -3,3 +3,14 @@
   flex-direction: column;
   flex: 0.8;
 }
+
+.chatHeader_info > span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.chatHeader_info > p {
+  font-size: 14px;
+  color: #7b7b7b;
+}
