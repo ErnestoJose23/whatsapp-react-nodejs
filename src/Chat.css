@@ -38,3 +38,39 @@
   background-color: white;
   height: 100vh;
 }
+
+.chat_body {
+  flex: 1;
+  background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.chat_message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.chat_timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.chat_name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+.chat_reciever {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
