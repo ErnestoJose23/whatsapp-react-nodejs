@@ -46,6 +46,7 @@
   background-position: center;
   padding: 30px;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .chat_message {
@@ -73,4 +74,18 @@
 .chat_reciever {
   margin-left: auto;
   background-color: #dcf8c6;
+}
+
+.chat_footer {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+
+.chat_footer > form {
+  flex: 1;
+  display: flex;
 }
