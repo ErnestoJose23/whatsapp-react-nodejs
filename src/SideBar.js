@@ -7,7 +7,7 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import { IconButton, Avatar } from "@material-ui/core";
 import SidebarChat from "./SidebarChat";
 
-function SideBar() {
+function SideBar({ setChatroom, chatrooms }) {
   return (
     <div className="sidebar">
       <div className="header">
@@ -35,9 +35,9 @@ function SideBar() {
       </div>
 
       <div className="chats">
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
+        {chatrooms.map((chatroom) => (
+          <SidebarChat />
+        ))}
       </div>
     </div>
   );
