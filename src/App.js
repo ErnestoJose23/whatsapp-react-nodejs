@@ -8,13 +8,16 @@ import axios from "./axios";
 
 function App() {
   const [messages, setMessages] = useState([]);
-  const [chatroom, setChatroom] = useState("1");
+  const [chatroom, setChatroom] = useState(1);
   const [chatrooms, setChatrooms] = useState([]);
 
   useEffect(() => {
     axios.get(`/messages/${chatroom}`).then((response) => {
       setMessages(response.data);
     });
+  }, [chatroom]);
+
+  useEffect(() => {
     axios.get("chatrooms/sync").then((response) => {
       setChatrooms(response.data);
     });
@@ -37,6 +40,7 @@ function App() {
   }, [messages]);
 
   console.log(messages);
+  console.log(chatroom);
 
   return (
     <div className="App">

@@ -36,7 +36,12 @@ function SideBar({ setChatroom, chatrooms }) {
 
       <div className="chats">
         {chatrooms.map((chatroom) => (
-          <SidebarChat />
+          <button
+            className="buttonSide"
+            onClick={() => setChatroom(chatroom.idChat)}
+          >
+            <SidebarChat key={chatroom.id} user={chatroom.user} />
+          </button>
         ))}
       </div>
     </div>
